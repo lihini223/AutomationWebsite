@@ -1,0 +1,392 @@
+<html>
+<head>
+    <link rel="icon" type="image/jpg" href="smart-home.png"/>
+    <title>Automation</title>
+    <link rel="stylesheet" type="text/css" href="sheet.css"/>
+    <link rel="stylesheet" type="text/css" href="nav.css"/>
+    <style>
+    
+        body {
+           background-image: url("bg.jpeg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            }
+        /*topnav*/
+     
+        .title{
+            position: absolute;
+            width: 100%;
+            height: 20em;
+            background-color: #b5d3d1;
+            
+            top: 5em;
+            margin-left: -8px;
+        }
+                .t{
+                    position: absolute;
+                    height: 20em;
+                    width: 40em;
+                    top: 5em;
+                    left: 22em;
+                }
+        .test,.arrow{
+            position: absolute;
+            top: 33em;
+            left: 40em;
+            height: 4em;
+            width: 4em;
+        }
+        .arrow{
+            top: 109em;
+            left: 72em;
+            cursor: pointer;
+            border-radius: 50%;
+            padding: 2px;
+            
+        }
+        span{
+            opacity: 0.7;
+            transition:0.3s;
+        }
+        span:hover{
+            opacity: 1;
+        }
+        #box{
+            padding-top: 10em;
+            margin-top: 40em;
+            position: absolute;
+            
+        }
+        .box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10,.box11,.box12,.box13,.box14,.box15,.box16,.box17,.box18,.box19,.box20,.box21,.box22,.box23{
+            position:absolute;
+            background-color: rgba(0,0,0,0.5);
+            height: 20em;
+            width: 15em;
+            margin-bottom: 8em;
+            margin-left: 5em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        
+        .box2,.box6,.box10,.box13,.box17,.box21{
+            margin-left: 25em;
+        }
+        .box3,.box7,.box11,.box14,.box18,.box22{
+            margin-left: 45em;
+        }
+        .box4,.box8,.box15,.box19,.box23{
+            margin-left: 65em;
+        }
+        .box5,.box6,.box7,.box8,.box16,.box17,.box18,.box19{
+            margin-top: 25em;
+        }
+        .box9,.box10,.box11,.box20,.box21,.box22,.box23{
+            margin-top: 50em;
+        }
+        .box12,.box13,.box14,.box15,.box16,.box17,.box18,.box19,.box20,.box21,.box22,.box23{
+            display: none;
+        }
+        #R{
+            left: 41em;
+            top: 125em;
+            margin-bottom: 7em;
+            margin-top: 1em;
+            display: none;
+        }
+        h2{
+            color: #c6d78e;
+            text-align: center;
+            margin: 5px;
+        }
+        .logo{
+            width: 50%;
+            height: 45%;
+            margin-top: 1em;
+            
+        }
+        p{
+            color:skyblue;
+            font-size: 15px;
+            font-family: sans-serif;
+            padding-top: 10px;
+            line-height: 20px;
+        }
+    </style>
+   
+</head>
+    <body>
+        <span onclick="set()"><a href="#box"><img src="pictures/home/fast-forward.png" class="arrow" data-aos="fade-up" data-aos-duration="1000" id="L"/></a></span>
+        <span onclick="unset()"><a href="#box"><img src="pictures/home/rewind.png" class="arrow" id="R"/></a></span>
+       <div id="box" align="center">
+            <a>
+            <div class="box1" data-aos="fade-up" data-aos-duration="1000" id="box1">
+                <h2>Automation</h2>
+                <img src="pictures/icons/robot.png" class="logo" />
+                <p>Automation is the technology by which a process or procedure is performed with minimum...</p>
+            </div>
+        </a>
+      <a>
+            <div  class="box2" data-aos="fade-up" data-aos-duration="1000" id="box2">
+                <h2>History Of Automation</h2>
+                <img src="pictures/icons/360-degrees.png" class="logo" />
+                <p> Prerequisites of mass production were interchangeable parts, machine...</p>
+            </div>
+        </a>
+            <a>
+            <div  class="box3" data-aos="fade-up" data-aos-duration="1000" id="box3">
+                <h2>Essence Of Automation</h2>
+                <img src="pictures/icons/server.png" class="logo" />
+                <p>a device, or set of devices to manage, command, direct or regulate...</p>
+            </div>
+        </a>
+            <a>
+            <div  class="box4" data-aos="fade-up" data-aos-duration="1000" id="box4">
+                <h2>Branches Of Automation</h2>
+                <img src="pictures/icons/chip.png" class="logo" />
+                <p>autonomous software agents to adapt the controllers of computer...</p>
+            </div>
+        </a>
+            <a>
+            <div  class="box5" data-aos="fade-up" data-aos-duration="1000" id="box5">
+                <h2>Fields Contributing To Automation</h2>
+                <img src="pictures/icons/internet.png" class="logo" />
+                <p>the interdisciplinary study of the structure of regulatory systems...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box6" data-aos="fade-up" data-aos-duration="1000" id="box6">
+                <h2>Automation Tools</h2>
+                <img src="pictures/icons/industrial.png" class="logo" />
+                <p>Engineers can now have numerical control over automated devices. The result...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box7" data-aos="fade-up" data-aos-duration="1000" id="box7">
+                <h2>Advantages And Disadvantages</h2>
+                <img src="pictures/icons/cost.png" class="logo" />
+                <p>Perhaps the most cited advantage of automation in industry is that it is associated...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box8" data-aos="fade-up" data-aos-duration="1000" id="box8">
+                <h2>Lights Out Manufacturing</h2>
+                <img src="pictures/icons/car.png" class="logo" />
+                <p>Lights out manufacturing is a production system with no human workers, to eliminate labor costs...</p>
+            </div>
+        </a>
+            <a>
+            <div  class="box9" data-aos="fade-up" data-aos-duration="1000" id="box9">
+                <h2>Paradox Of Automation</h2>
+                <img src="pictures/icons/bandwidth.png" class="logo" />
+                <p>The paradox of automation says that the more efficient the automated system, the more...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box10" data-aos="fade-up" data-aos-duration="1000" id="box10">
+                <h2>Cognitive Automation</h2>
+                <img src="pictures/icons/face-scan.png" class="logo" />
+                <p>Cognitive automation, as a subset of artificial intelligence, is an emerging genus of automation...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box11" data-aos="fade-up" data-aos-duration="1000" id="box11">
+                <h2>Emerging Technology</h2>
+                <img src="pictures/icons/drone.png" class="logo" />
+                <p></p>
+            </div>
+        </a>
+           <a>
+            <div  class="box12" data-aos="fade-up" data-aos-duration="1000" id="box12">
+                <h2>Automated Restaurant</h2>
+                <img src="pictures/icons/payment.png" class="logo" />
+                <p>The food retail industry has started to apply automation to the ordering process...</p>
+            </div>
+        </a>
+            <a>
+            <div  class="box13" data-aos="fade-up" data-aos-duration="1000" id="box13">
+                <h2>Automated Retail</h2>
+                <img src="pictures/icons/bitcoin.png" class="logo" />
+                <p>Many supermarkets and even smaller stores are rapidly introducing Self checkout systems reducing...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box14" data-aos="fade-up" data-aos-duration="1000" id="box14">
+                <h2>Automated Mining</h2>
+                <img src="pictures/icons/windmill.png" class="logo" />
+                <p>Automated mining involves the removal of human labor from the mining process. The mining...</p>
+            </div>
+        </a>
+            <a>
+            <div  class="box15" data-aos="fade-up" data-aos-duration="1000" id="box15">
+                <h2>Automated Video Surveillance</h2>
+                <img src="pictures/icons/smart-home.png" class="logo" />
+                <p>The Defense Advanced Research Projects Agency (DARPA) started the research...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box16" data-aos="fade-up" data-aos-duration="1000" id="box16">
+                <h2>Automated Highway Systems</h2>
+                <img src="pictures/icons/parking.png" class="logo" />
+                <p>As demands for safety and mobility have grown and technological possibilities have multiplied...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box17" data-aos="fade-up" data-aos-duration="1000" id="box17">
+                <h2>Automated Waste Management</h2>            
+                <img src="pictures/icons/ftp.png" class="logo" />
+                <p>Automated waste collection trucks prevent the need for as many workers as well as easing...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box18" data-aos="fade-up" data-aos-duration="1000" id="box18">
+                <h2>Business Process Automation </h2>
+                <img src="pictures/icons/cpu.png" class="logo" />
+                <p>Business process automation (BPA) is the technology-enabled automation of complex...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box19" data-aos="fade-up" data-aos-duration="1000" id="box19">
+                <h2>Home Automation</h2>
+                <img src="pictures/icons/cloud-storage.png" class="logo" />
+                <p>Home automation (also called domotics) designates an emerging practice of increased automation of household...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box20" data-aos="fade-up" data-aos-duration="1000" id="box20">
+                <h2>Industrial Automation Industry</h2>
+                <img src="pictures/icons/heart.png" class="logo" />
+                <p>The rise of industrial automation is directly tied to the “fourth industrial revolution”, which is better...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box21" data-aos="fade-up" data-aos-duration="1000" id="box21">
+                <h2>Industrial Robotics</h2>
+                <img src="pictures/icons/robot%20(1).png" class="logo" />
+                <p>Industrial robotics is a sub-branch in the industrial automation that aids in various manufacturing...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box22" data-aos="fade-up" data-aos-duration="1000" id="box22">
+                <h2>Agent-Assisted Automation</h2>
+                <img src="pictures/icons/analysis.png" class="logo" />
+                <p>Agent-assisted automation refers to automation used by call center agents to handle...</p>
+            </div>
+        </a>
+           <a>
+            <div  class="box23" data-aos="fade-up" data-aos-duration="1000" id="box23">
+                <h2>Relationship To Unemployment</h2>
+                <img src="pictures/icons/artificial-intelligence.png" class="logo" />
+                <p>Research by Carl Benedikt Frey and Michael Osborne of the Oxford Martin School...</p>
+            </div>
+        </a>
+        </div>
+        <div class="title"></div>
+     <img class="t" src="pictures\home\ezgif.com-crop.gif" />
+        <a href="#box"><img src="pictures\home\ScrollArrowAnimate.gif" class="test"/></a>
+        
+    <ul>
+  <li><a href="#home">Home</a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Pages</a>
+    <div class="dropdown-content">
+                    <a href="Automation.html">Automation</a>
+                    <a href="History%20Of%20Automation.html">History Of Automation</a>
+                    <a href="Essence%20of%20automation.html">Essence  of Automation</a>
+                    <a href="Branches%20of%20Automation.html">Branches Of Automation</a>
+                    <a href="Fields%20contributing%20to%20automation.html">Fields Contributing to Automation</a>
+                    <a href="Automation%20Tools.html">Automation Tools</a>
+                    <a href="Advantages%20,%20Disadvantages%20and%20Limitations%20of%20Automation.html">Advantages , Disadvantages and Limitations</a>
+                    <a href="Lights%20Out%20Manufacturing.html">Lights out Manufacturing</a>
+                    <a href="Paradox%20of%20Automation.html">Paradox of Automation</a>
+                    <a href="Cognitive%20Automation.html">Cognitive Automation</a>
+                    <a href="Emerging%20Technology.html">Emerging Technology</a>
+                    <a href="Automated%20Restuarant.html">Automated Restuarant</a>
+                    <a href="Automated%20Retail.html">Automated Retail</a>
+                    <a href="Automated%20Mining.html">Automated Mining</a>
+                    <a href="Automated%20Video%20Surveillance.html">Automated Video Surveillance</a>
+                    <a href="Automated%20Highway%20Systems.html">Automated Highway Systems</a>
+                    <a href="Automated%20Waste%20Management.html">Automated Waste Management</a>
+                    <a href="Business%20Process%20Automation.html">Business Process Automation</a>
+                    <a href="Home%20Automation.html">Home Automation</a>
+                    <a href="Industrial%20Automation%20&%20industry.html">Industrial Automation and Industry</a>
+                    <a href="Industrial%20Robotics.html">Industrial Robotics</a>
+                    <a href="Agent-assisted%20automation.html">Agent-Assisted Automation</a>
+                    <a href="Relationship%20to%20Unemployment.html">Relationship To Unemployment</a>
+    </div>
+  </li>
+  <li><a href="About.html">About</a></li>
+  <li><a href="Contact.html">Contact</a></li>
+  
+</ul>
+
+        
+    <div class="footer">
+        <p>&copy; 2018 copyright | Developed by Devi Web Team | Icons made by Gregor Cresner from www.flaticon.com</p>
+     </div>
+         <script type="text/javascript" src="script.js"></script>
+        <script>
+            AOS.init();
+            
+            function set(){
+                document.getElementById("box1").style.display="none";
+                document.getElementById("box2").style.display="none";
+                document.getElementById("box3").style.display="none";
+                document.getElementById("box4").style.display="none";
+                document.getElementById("box5").style.display="none";
+                document.getElementById("box6").style.display="none";
+                document.getElementById("box7").style.display="none";
+                document.getElementById("box8").style.display="none";
+                document.getElementById("box9").style.display="none";
+                document.getElementById("box10").style.display="none";
+                document.getElementById("box11").style.display="none";
+                document.getElementById("L").style.display="none";
+                
+                document.getElementById("box12").style.display="inline";
+                document.getElementById("box13").style.display="inline";
+                document.getElementById("box14").style.display="inline";
+                document.getElementById("box15").style.display="inline";
+                document.getElementById("box16").style.display="inline";
+                document.getElementById("box17").style.display="inline";
+                document.getElementById("box18").style.display="inline";
+                document.getElementById("box19").style.display="inline";
+                document.getElementById("box20").style.display="inline";
+                document.getElementById("box21").style.display="inline";
+                document.getElementById("box22").style.display="inline";
+                document.getElementById("box23").style.display="inline";
+                document.getElementById("R").style.display="inline";
+                
+                
+            }
+            function unset(){
+                document.getElementById("box12").style.display="none";
+                document.getElementById("box13").style.display="none";
+                document.getElementById("box14").style.display="none";
+                document.getElementById("box15").style.display="none";
+                document.getElementById("box16").style.display="none";
+                document.getElementById("box17").style.display="none";
+                document.getElementById("box18").style.display="none";
+                document.getElementById("box19").style.display="none";
+                document.getElementById("box20").style.display="none";
+                document.getElementById("box21").style.display="none";
+                document.getElementById("box22").style.display="none";
+                document.getElementById("box23").style.display="none";
+                document.getElementById("R").style.display="none";
+                
+                document.getElementById("box1").style.display="inline";
+                document.getElementById("box2").style.display="inline";
+                document.getElementById("box3").style.display="inline";
+                document.getElementById("box4").style.display="inline";
+                document.getElementById("box5").style.display="inline";
+                document.getElementById("box6").style.display="inline";
+                document.getElementById("box7").style.display="inline";
+                document.getElementById("box8").style.display="inline";
+                document.getElementById("box9").style.display="inline";
+                document.getElementById("box10").style.display="inline";
+                document.getElementById("box11").style.display="inline";
+                document.getElementById("L").style.display="inline";
+            }
+        </script>
+    </body>
+</html>
